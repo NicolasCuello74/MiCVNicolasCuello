@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Mi CV - Nicolas Cuello</title>
+    
+</head>
+<body>
+    <!--Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1><span>Nicolas Cuello</span></h1>
+                    <nav id="nav" class=""> 
+                        <ul id="links">
+                           <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                           <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                           <li><a href="#experiencias" onclick="seleccionar(this)">EXPERIENCIAS</a></li>
+                           <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li> 
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick = responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy Nicolas Cuello, Desarrolador Web</h2>
+                <p class="descripcion">Me encanta trabajar en la web y asegurarme de que siga siendo un lugar para todos, con nuestras pasiones creativas, personales y extrañas. Con más de 2 años de experiencia en front-end y pasión por el diseño de sitios web receptivos y un firme creyente en el enfoque móvil primero.</p>
+            </div>
+        </div>
+    </section> 
+
+    <!--Sección Sobre mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/img/IMG_20221018_212959254_2.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Nicolas Cuello</span></h2>
+            <h3>Desarrolador web</h3>
+            <p>Fecha de nacimiento: 02/11/1989</p>
+            <p>Correo electrónico: nicolascuello@gmail.com</p>
+            <p>Nacionalidad: Argentina</p>
+            <p>Dirección: Av. Santa Fe 365, Buenos Aires, Argentina CP1425BGY CABA</p>
+            <p>Telefono: (764) 454-6216</p>
+
+        </div>
+
+
+    </section>
+    <!--Sección experiencias-->
+    <section id="experiencias">
+        <h3 class="titulo-seccion">Mis experiencias</h3>
+        <div class="fila">
+            <div class="experiencia">
+               <span><i class="fa-solid fa-globe"></i></span>
+               <h4>DIMMB Project</h4>
+               <hr>
+               <ul class="experiencia-tag">
+                   <li>Web accesible WCAG para discapacitados.</li>
+                   <li>Desarrollada y adaptada con WordPress en conjunción con la Agencia Creativa ParaAyer</li>
+                   <li>Año: Abril, 2019.</li>
+               </ul>
+            </div>
+            <div class="experiencia">
+                <span><i class="fa-solid fa-globe"></i></span>
+                <h4>Studio64 FOTOGRAFIA</h4>
+                <hr>
+                <ul class="experiencia-tag">
+                    <li>La web del fotógrafo profesional Pablo de la Peña está programada en HTML5, CSS3 y JS.</li>
+                    <li>Es “responsive” (Bootstrap). También lleva complementos jQuery.</li>
+                    <li>Año: Mayo, 2020.</li>
+                </ul>
+             </div>
+             <div class="experiencia">
+                <span><i class="fa-solid fa-globe"></i></span>
+                <h4>Autobuses "Vulcano"</h4>
+                <hr>
+                <ul class="experiencia-tag">
+                    <li>Web corporativa con posibilidad de compra virtual de billetes (Ecwid).</li>
+                    <li>HTML5, CSS3, PHP, jQuery, Bootstrap, precargador, mapa Google, descargas de archivos PDF, formulario con validación y respuesta vía correo electrónico.</li>
+                    <li>Año: Mayo, 2020.</li>
+                </ul>
+             </div>
+        </div>
+    </section>
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-habilidades" id="habilidades">
+        <h3>HABILIDADES</h3>
+        <div class="habilidad">
+            <div class="informacion">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p><span class="lista"></span>Base de datos</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="habilidad">
+            <div class="informacion">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
